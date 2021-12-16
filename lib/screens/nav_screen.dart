@@ -119,7 +119,15 @@ class _NavScreenState extends State<NavScreen> {
 
                           if (height <= _playerMinHeight + 50.0)
                             return Container(
-                              color: Theme.of(context).scaffoldBackgroundColor,
+                              decoration: BoxDecoration(
+                                color: Theme.of(context).scaffoldBackgroundColor,
+                              boxShadow: [
+                                  const BoxShadow(
+                                    color: Colors.grey,
+                                    blurRadius: 5,
+                                  ),
+                              ],
+                            ),
                               child: Column(
                                 children: [
                                   Row(

@@ -3,11 +3,11 @@ enum Days { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
 mixin DaysMixin {
   late Days _day;
 
-  void setColor(Days day) {
+  void setDay(Days day) {
     _day = day;
   }
 
-  Days get color => _day;
+  Days get day => _day;
 }
 
 class SelectDayOfWeek with DaysMixin {

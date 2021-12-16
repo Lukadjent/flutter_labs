@@ -42,20 +42,19 @@ Future<void> main() async {
     ),
   );
 
-  print('Json data: ');
+  /*print('Json data: ');
   print(await getJSONData());
   print('Example of await...');
   print(await getDataWithDelay());
   print('Example of .then()...');
   getDataWithDelay().then((response) {
     print(response);
-  });
+  });*/
 
-  MyClass obj = MyClass(num1: 10, num2: 20);
+ /* MyClass obj = MyClass(num1: 10, num2: 20);
   obj.setPrivateNum = obj.num1;
   print("private: ${obj.getPrivateNum}");
   print(obj.sugarDemonstration(null));
-  print(obj.toString());
   print(obj.sugarDemonstration(5));
   print(obj.toString());
 
@@ -73,7 +72,7 @@ Future<void> main() async {
   functionWithParameters(10, y: 20, z: 30);
 
   SelectDayOfWeek()
-    ..setColor(Days.Thursday)
+    ..setDay(Days.Thursday)
     ..printDay();
 
   assertExample(25);
@@ -91,7 +90,7 @@ Future<void> main() async {
     "birthday": "01.01.2001"
   };
   infoAboutMe["name"] = "Luka";
-  infoAboutMe.remove(4);
+  infoAboutMe.remove("birthday");
   print("keys: ${infoAboutMe.keys}, values: ${infoAboutMe.values}, length: ${infoAboutMe.length}");
   print(infoAboutMe);
 
@@ -99,7 +98,7 @@ Future<void> main() async {
   set.add(6);
   print("first: ${set.first}, last: ${set.last}, length: ${set.length}");
   var newSet = set.where((element) => element > 3);
-  print(newSet);
+  print(newSet);*/
 }
 
 class MyApp extends StatefulWidget {
