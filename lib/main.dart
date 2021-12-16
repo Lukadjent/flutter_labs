@@ -14,7 +14,7 @@ import 'lab1_dart.dart';
 
 Future<List<Map<String, dynamic>>> getJSONData() async {
   final response = await http.get(Uri.parse(
-      "https://raw.githubusercontent.com/ZaykaNya/flutter-labs/lab3/lib/data.json"));
+      "https://raw.githubusercontent.com/LukaDjent/flutter_labs/lib/data.json"));
 
   if (response.statusCode == 200) {
     final list = (jsonDecode(response.body) as List);
