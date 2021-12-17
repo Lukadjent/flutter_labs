@@ -154,8 +154,8 @@ class AnimatedContainer extends AnimatedWidget {
   const AnimatedContainer({Key? key, required Animation<double> animation})
       : super(key: key, listenable: animation);
 
-  static final _widthTween = Tween<double>(begin: 1, end: 350);
-  static final _heightTween = Tween<double>(begin: 1, end: 150);
+  static final _widthTween = Tween<double>(begin: 200, end: 200);
+  static final _heightTween = Tween<double>(begin: 200, end: 300);
   static final _colorTween = ColorTween(begin: Colors.green, end: Colors.pinkAccent);
 
   @override
@@ -164,7 +164,7 @@ class AnimatedContainer extends AnimatedWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: SizedBox(
-        height: 200,
+        height: 350,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

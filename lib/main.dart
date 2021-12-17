@@ -42,14 +42,14 @@ Future<void> main() async {
     ),
   );
 
-  /*print('Json data: ');
+  print('Json data: ');
   print(await getJSONData());
   print('Example of await...');
   print(await getDataWithDelay());
   print('Example of .then()...');
   getDataWithDelay().then((response) {
     print(response);
-  });*/
+  });
 
  /* MyClass obj = MyClass(num1: 10, num2: 20);
   obj.setPrivateNum = obj.num1;
